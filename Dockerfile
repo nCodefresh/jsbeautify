@@ -16,4 +16,7 @@ EXPOSE 8080
 
 COPY . /src
 
+WORKDIR /src
+RUN npm install
+
 CMD ["/usr/bin/node", "/src/app.js"]
